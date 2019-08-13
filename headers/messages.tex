@@ -1,0 +1,29 @@
+\IfFileExists{todonotes.sty}{\usepackage{todonotes}}{\usepackage{xcolor}}
+
+\newcommand{\todomsg}[1]{%
+   \IfFileExists{todonotes.sty}{%
+      \todo[inline]{TODO: #1}%
+   }{%
+      \textcolor{red}{TODO: #1}%
+   }
+}
+
+\newcommand{\unimplemented}[0]{%
+   \IfFileExists{todonotes.sty}{%
+      \todo[inline,linecolor=blue,backgroundcolor=blue!25,bordercolor=blue]{%
+         Not implemented yet.
+      }%
+   }{%
+      \textcolor{blue}{Not implemented yet.}
+   }
+}
+
+\newcommand{\draft}[0]{%
+   \IfFileExists{todonotes.sty}{%
+      \todo[inline,linecolor=purple,backgroundcolor=purple!25,bordercolor=purple]{%
+         Still an early draft.
+      }%
+   }{%
+      \textcolor{purple}{Still an early draft.}
+   }
+}

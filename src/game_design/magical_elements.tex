@@ -1,10 +1,15 @@
 \subsection{Magical Elements}
 \label{magical-elements}
+\unimplemented{}
+\draft{}
+
 \begin{figure}
 \begin{center}
-\begin{tikzpicture}[auto,>=stealth']
+\begin{tikzpicture}[node distance=6em]
    \tikzstyle{primary} = [draw,rectangle];
    \tikzstyle{secondary} = [draw,diamond];
+   \tikzstyle{opposite} = [densely dotted,latex reversed-latex reversed,thin];
+   \tikzstyle{component} = [->];
    \node[primary] (WIND) {Wind};
    \node[secondary,below right of = WIND] (SNOW) {Snow};
    \node[primary,below right of = SNOW] (WATER) {Water};
@@ -14,17 +19,61 @@
    \node[primary,above left of = METAL] (FIRE) {Fire};
    \node[secondary,above right of = FIRE] (LIGHTNING) {Lightning};
 
-   \draw (WIND) -- (LIGHTNING);
-   \draw (WIND) -- (SNOW);
-   \draw (WATER) -- (SNOW);
-   \draw (WATER) -- (PLANT);
-   \draw (EARTH) -- (PLANT);
-   \draw (EARTH) -- (METAL);
-   \draw (FIRE) -- (METAL);
-   \draw (FIRE) -- (LIGHTNING);
+   \draw[component] (WIND) -- (LIGHTNING);
+   \draw[component] (WIND) -- (SNOW);
+
+   \draw[component] (WATER) -- (SNOW);
+   \draw[component] (WATER) -- (PLANT);
+
+   \draw[component] (EARTH) -- (PLANT);
+   \draw[component] (EARTH) -- (METAL);
+
+   \draw[component] (FIRE) -- (METAL);
+   \draw[component] (FIRE) -- (LIGHTNING);
+
+   \draw[opposite] (FIRE) -- (WATER);
+   \draw[opposite] (WIND) -- (EARTH);
 \end{tikzpicture}
 \end{center}
 \caption{Magical Elements Wheel}
 \label{magical-elements-wheel}
 \end{figure}
 
+Attacks may have an associated magical element. This element would be one
+of four primaries: \textit{Wind}, \textit{Water}, \textit{Earth}, or
+\textit{Fire}. A status infliction chance, defended against with some other
+attribute, is then rolled to see if the effect occurs. If not, nothing special
+happens. Otherwise:
+\begin{itemize}
+\item
+   If the target has no current element afflictions, it is afflicted with a
+   level 1 status for that element.
+\item
+   If the target already has an affliction for that element, this affliction
+   increases in level. Cooldown for that element is reset.
+\item
+   If the target has an affliction for the element facing the one used in the
+   attack according to Figure~\ref{magical-elements-wheel} (e.g.~\textit{Wind}
+   and \textit{Earth}), the existing affliction's level is lowered and no new
+   affliction is added.
+\item
+   If the target has an affliction of another element, not only does it gain
+   a level of affliction for the attack's element, but it also gains an
+   affliction corresponding to the element between the two primary elements
+   shown in Figure~\ref{magical-elements-wheel} (e.g.~\textit{Wind} plus
+   \textit{Water} also adds \textit{Snow}).
+\end{itemize}
+
+\begin{itemize}
+\item
+   Afflictions for composite elements do not have cooldowns: they disappear as
+   soon as at least one of the primaries generating it is removed.
+\item
+   The level of the affliction for a composite element is the maximum between
+   the current levels of the afflictions that generate it.
+\item
+   Having an affliction reach level 0 removes it.
+\item
+   The mechanics described above prevent having more than three elemental
+   afflictions (two primaries and their composite).
+\end{itemize}
