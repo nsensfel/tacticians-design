@@ -1,0 +1,30 @@
+\subsection{Magical Elements}
+\label{magical-elements}
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[auto,>=stealth']
+   \tikzstyle{primary} = [draw,rectangle];
+   \tikzstyle{secondary} = [draw,diamond];
+   \node[primary] (WIND) {Wind};
+   \node[secondary,below right of = WIND] (SNOW) {Snow};
+   \node[primary,below right of = SNOW] (WATER) {Water};
+   \node[secondary,below left of = WATER] (PLANT) {Plant};
+   \node[primary,below left of = PLANT] (EARTH) {Earth};
+   \node[secondary,above left of = EARTH] (METAL) {Metal};
+   \node[primary,above left of = METAL] (FIRE) {Fire};
+   \node[secondary,above right of = FIRE] (LIGHTNING) {Lightning};
+
+   \draw (WIND) -- (LIGHTNING);
+   \draw (WIND) -- (SNOW);
+   \draw (WATER) -- (SNOW);
+   \draw (WATER) -- (PLANT);
+   \draw (EARTH) -- (PLANT);
+   \draw (EARTH) -- (METAL);
+   \draw (FIRE) -- (METAL);
+   \draw (FIRE) -- (LIGHTNING);
+\end{tikzpicture}
+\end{center}
+\caption{Magical Elements Wheel}
+\label{magical-elements-wheel}
+\end{figure}
+
