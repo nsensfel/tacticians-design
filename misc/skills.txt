@@ -90,3 +90,8 @@ Ideas for some skills:
 * Denial {D, B0, B1, B2}:
    Target is unable to gain SP points from attacks, parries, or defenses for
    {D: 2, B0: 4, B1: 6} turns.
+
+* Rollback
+   Rollbacks all actions done by this player during this turn, then disables
+   this character for the remainder of the turn. Potential danger if two
+   characters have this ability (as they can re-activate each other).
