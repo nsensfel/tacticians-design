@@ -1,0 +1,15 @@
+Name: TBD
+Summary:
+   Parliamentary democracy, with two houses: the Ladies and the Gentlemen.
+   Both constituted and elected of/by their respective gender. Decisions must
+   be agreed by both houses separately, making for a lengthy process and the
+   need for the player to satisfy multiple, potentially contradictory,
+   demands.
+Battle Cries:
+Relation to the Ancients:
+   Neutral/Varied
+Initial relation to player:
+   Considers them to be the representative of Morrigan, expects long lasting
+   deals to be reached. As none can be, the player becomes a rather the subject
+   of an increasingly divisive debate.
+Members:

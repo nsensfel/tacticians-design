@@ -1,0 +1,13 @@
+Name: TBD
+Summary:
+   Small monarchy with healthy heads of state, and two brotherly princes. The
+   prince not set to inherit is encouraged to join the player's party on their
+   trip around the continent so as to establish themselves as the kingdom's
+   foreign representative, as well as keeping him out of court so that he
+   cannot be used as a rally point for dissidents.
+Battle Cries:
+Relation to the Ancients:
+   Respectful
+Initial relation to player:
+   Warm reception, wants to curry favor.
+Members:

@@ -1,0 +1,15 @@
+Name: TBD
+Summary:
+   Group of brigands that actually ended up forming a legitimate business after
+   accumulating sufficient wealth. They do not actually perform the contracts
+   themselves, and instead use they numerous contacts with active brigand
+   groups to bribe them into either targeting or ignoring travelers and
+   merchants. Joining the group requires a substantial financial donation, and
+   is considered the best possible form of retirement by many bandits.
+Battle Cries:
+Relation to the Ancients:
+   Neutral
+Initial relation to player:
+   Neutral
+Members:
+   Former brigands who no longer fight.

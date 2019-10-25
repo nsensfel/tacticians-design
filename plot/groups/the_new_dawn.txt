@@ -1,0 +1,20 @@
+Name: The New Dawn
+Summary:
+   This group believes that no lasting peace can be achieved: violence begets
+   violence, the conflict has lasted too long, leading to a hate too deeply
+   ingrained. Their solution is to bring the Night, an end to all factions,
+   all history and all existing culture. With their past being erased on the
+   New Dawn, all of those who remain would be united in purpose, finally
+   putting an end to their conflicts.
+Battle Cries:
+   - Let there be Night!
+   - For the New Dawn!
+Relation to the Ancients:
+   Hostile to all.
+Initial relation to player:
+   Hostile.
+Members:
+   Pretty much any character can be a member. Membership is typically kept
+   secret. Many of their members are criminals who do not care at all about
+   the ideology, but are happy to have powerful and discreet patrons
+   supporting their trade.
